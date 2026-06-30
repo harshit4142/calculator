@@ -41,7 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0,0%,95%);
+    background-color: hsl(0, 34%, 74%);
 }
 
 button:hover {
@@ -62,4 +62,34 @@ button:active {
 
 .op:active {
     background-color: hsl(35,100%,75%);
+}
+
+.eq {
+    background-color: hsl(204, 75%, 35%);
+    font-size: 2rem;
+}
+
+.eq:hover {
+    background-color: hsl(204, 75%, 45%);
+}
+
+.eq:active {
+    background-color: hsl(204, 75%, 55%);
+}
+
+.dl {
+    grid-column: span 3;   /* takes the remaining 3 columns */
+    width: auto;           /* override the fixed 100px width */
+    border-radius: 50px;
+
+    background-color: hsl(204, 75%, 35%);
+    font-size: 2rem;
+}
+
+.dl:hover {
+    background-color: hsl(204, 75%, 45%);
+}
+
+.dl:active {
+    background-color: hsl(204, 75%, 55%);
 }

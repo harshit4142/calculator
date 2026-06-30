@@ -15,3 +15,11 @@ function calculate() {
         display.value = 'Error';
     }
 }
+
+function deleteLast() {
+    if(display.value != 'undefined' && display.value != 'Error' && display.value != 'Infinity') {
+    display.value = display.value.slice(0, -1);
+    } else {
+        display.value = '';
+    }
+}
