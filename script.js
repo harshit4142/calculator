@@ -17,9 +17,11 @@ function calculate() {
 }
 
 function deleteLast() {
-    if(display.value != 'undefined' && display.value != 'Error' && display.value != 'Infinity') {
-    display.value = display.value.slice(0, -1);
+    const lastChar = display.value.at(-1);
+
+    if (/^[0-9]$/.test(lastChar) || /^[+\-*/.]$/.test(lastChar)) {
+        display.value = display.value.slice(0, -1);
     } else {
-        display.value = '';
+        display.value = "";
     }
 }
